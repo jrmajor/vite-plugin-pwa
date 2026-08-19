@@ -473,6 +473,11 @@ export interface IconResource {
   purpose?: StringLiteralUnion<IconPurpose> | IconPurpose[]
 }
 
+export interface ManifestColorScheme {
+  background_color?: string
+  theme_color?: string
+}
+
 export interface ManifestOptions {
   /**
    * @default _npm_package_name_
@@ -537,6 +542,10 @@ export interface ManifestOptions {
    * @default `#42b883`
    */
   theme_color: string
+  /**
+   * Colors used in dark mode.
+   */
+  color_scheme_dark?: ManifestColorScheme
   /**
    * @default `ltr`
    */
