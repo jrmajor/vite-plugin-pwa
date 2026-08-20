@@ -473,7 +473,7 @@ export interface IconResource {
   purpose?: StringLiteralUnion<IconPurpose> | IconPurpose[]
 }
 
-export interface ManifestColorScheme {
+export interface ColorSchemeDark {
   background_color?: string
   theme_color?: string
 }
@@ -545,7 +545,7 @@ export interface ManifestOptions {
   /**
    * Colors used in dark mode.
    */
-  color_scheme_dark?: ManifestColorScheme
+  color_scheme_dark?: ColorSchemeDark
   /**
    * @default `ltr`
    */
